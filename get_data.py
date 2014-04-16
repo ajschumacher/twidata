@@ -14,7 +14,7 @@ while True:
         with open(file_location, "a") as output:
             for item in r.get_iterator():
                 output.write(str(item) + "\n")
-            delay = max(8, delay/2)
+                delay = max(8, delay/2)
     except:
         print "Error"
         print time.ctime()
